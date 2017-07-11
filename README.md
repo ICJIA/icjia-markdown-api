@@ -15,11 +15,11 @@ npm run dev
 
 First deployment:
 
-now secrets add mongodb-url "mongodb://<MONGODB_ATLAS_CONNECT_STRING>"
+### now secrets add mongodb-url "mongodb://<MONGODB_ATLAS_CONNECT_STRING>"
 
 npm run now
 
-Subsequent deployments:
+### Subsequent deployments:
 
 npm run now
 
