@@ -10,3 +10,12 @@ describe('It should resolve', function () {
     .then(res => console.log(res))
   })
 })
+
+// describe('mdContent minimum of 3 characters', function () {
+//   it('minimum', function () {
+//     const link = new Link({})
+//     return Link
+//     .find()
+//     .then(res => console.log(res))
+//   })
+// })

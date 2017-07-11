@@ -36,6 +36,14 @@ npm run test
 npm run test:watch
 ```
 
+## Demo endpoint
+
+[https://icjia-api.now.sh/api/links](https://icjia-api.now.sh/api/links)
+
+## Loopback Explorer
+
+[https://icjia-api.now.sh/explorer](https://icjia-api.now.sh/explorer)
+
 ## Dependences:
 - [Node.js](https://nodejs.org/en/)
 - [Nodemon](https://github.com/remy/nodemon)
