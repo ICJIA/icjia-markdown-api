@@ -1,6 +1,6 @@
 # ICJIA REST API
 
-Test REST sAPI using [Loopback.io](https://loopback.io) and [MongoDB Atlas cloud database](https://cloud.mongodb.com/) .
+Test REST API using [Loopback.io](https://loopback.io) and [MongoDB Atlas cloud database](https://cloud.mongodb.com/) .
 
 For local development, make sure [Node](https://nodejs.org/en/) and [MongoDB]() are installed.
 
