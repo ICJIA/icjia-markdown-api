@@ -15,7 +15,7 @@ npm run dev
 
 First deployment:
 
-now secrets add mongodb-url "mongodb://<USERNAME>:<PASSWORD>@cluster0-shard-00-00-8qarm.mongodb.net:27017 <FULL_CONNECT_STRING>"
+now secrets add mongodb-url "mongodb://<MONGODB_ATLAS_CONNECT_STRING>"
 
 npm run now
 
