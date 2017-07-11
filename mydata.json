@@ -1,0 +1,21 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 1,
+    "Role": 1,
+    "link": 3
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {},
+    "Role": {},
+    "link": {
+      "1": "{\"link\":\"http://www.amazon.com\",\"date\":\"2017-07-10T21:32:35.670Z\",\"id\":1}",
+      "2": "{\"link\":\"https://markdown.icjia.cloud\",\"date\":\"2017-07-10T21:32:35.670Z\",\"id\":2}"
+    }
+  }
+}
