@@ -16,14 +16,13 @@
     "node": ">=4"
   },
   "scripts": {
-    "dev": "nodemon server/server.js --watch common --watch server",
+    "dev": "MONGODB_URL=mongodb://localhost:27017/link nodemon server/server.js --watch common --watch server",
     "lint": "eslint .",
     "start": "node .",
     "posttest": "npm run lint && nsp check",
     "now:deploy": "now",
     "now:alias": "now alias",
     "now": "npm run now:deploy && npm run now:alias"
-
   },
   "dependencies": {
     "compression": "^1.0.3",
