@@ -40,9 +40,6 @@ npm run test:watch
 
 [https://icjia-api.now.sh/api/links](https://icjia-api.now.sh/api/links)
 
-## Loopback Explorer
-
-[https://icjia-api.now.sh/explorer](https://icjia-api.now.sh/explorer)
 
 ## Dependences:
 - [Node.js](https://nodejs.org/en/)
