@@ -19,7 +19,8 @@
     "dev": "MONGODB_URL=mongodb://localhost:27017/link nodemon server/server.js --watch common --watch server",
     "lint": "eslint .",
     "start": "node .",
-    "posttest": "npm run lint && nsp check",
+    "test": "mocha test/*/*.test.js",
+    "test: watch": "npm run test -- --watch",
     "now:deploy": "now",
     "now:alias": "now alias",
     "now": "npm run now:deploy && npm run now:alias"
@@ -36,8 +37,10 @@
     "strong-error-handler": "^2.0.0"
   },
   "devDependencies": {
+    "chai": "^4.0.2",
     "eslint": "^3.17.1",
     "eslint-config-loopback": "^8.0.0",
+    "mocha": "^3.4.2",
     "nodemon": "^1.11.0",
     "nsp": "^2.1.0"
   },
