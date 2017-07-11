@@ -11,7 +11,7 @@ To start local MongoDB: ```mongod```
 
 npm run dev
 
-## Production deployment to a Zeit Now (w/MongoDB Atlas):
+## Production deployment to Zeit's Now (w/MongoDB Atlas):
 
 First deployment:
 
