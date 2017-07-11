@@ -16,11 +16,12 @@
     "node": ">=4"
   },
   "scripts": {
-    "dev": "MONGODB_URL=mongodb://localhost:27017/link nodemon server/server.js --watch common --watch server",
+    "dev": "MONGODB_URL=mongodb://localhost:27017/links nodemon server/server.js --watch common --watch server",
     "lint": "eslint .",
     "start": "node .",
-    "test": "mocha test/*/*.test.js",
-    "test: watch": "npm run test -- --watch",
+    "test:start": "mocha test/**/*.test.js",
+    "test": "MONGODB_URL=mongodb://localhost:27017/links npm run test:start",
+    "test:watch": "MONGODB_URL=mongodb://localhost:27017/links npm run test:start -- --watch",
     "now:deploy": "now",
     "now:alias": "now alias",
     "now": "npm run now:deploy && npm run now:alias"

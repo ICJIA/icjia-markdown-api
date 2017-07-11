@@ -1,11 +1,13 @@
-# ICJIA API
+# ICJIA REST API
 
-Test API using [Loopback.io](https://loopback.io) and [MongoDB Atlas cloud database](https://cloud.mongodb.com/) .
+Test REST sAPI using [Loopback.io](https://loopback.io) and [MongoDB Atlas cloud database](https://cloud.mongodb.com/) .
 
 For local development, make sure [Node](https://nodejs.org/en/) and [MongoDB]() are installed.
 
-To start local MongoDB: ```mongod```
-
+## Start local MongoDB
+```
+mongod
+```
 
 ## Local deployment:
 ```
@@ -26,9 +28,19 @@ npm run now
 ```
 npm run now
 ```
+
+## Unit tests
+```
+npm run test
+
+npm run test:watch
+```
+
 ## Dependences:
 - [Node.js](https://nodejs.org/en/)
 - [Nodemon](https://github.com/remy/nodemon)
 - [Loopback.io](https://loopback.io)
 - [MongoDB](https://www.mongodb.com/)
 - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+- [Mocha](https://github.com/mochajs/mocha)
+- [Chai](http://chaijs.com/)
