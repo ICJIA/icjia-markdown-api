@@ -6,23 +6,25 @@ For local development, make sure [Node](https://nodejs.org/en/) and [MongoDB]() 
 
 To start local MongoDB: ```mongod```
 
-```
+
 ## Local deployment:
-
+```
 npm run dev
+```
 
-## Production deployment to Zeit's Now (w/MongoDB Atlas):
+## Production deployment to Zeit's Now:
 
-First deployment:
+### First deployment:
 
-### now secrets add mongodb-url "mongodb://<MONGODB_ATLAS_CONNECT_STRING>"
+```
+now secrets add mongodb-url "mongodb://<MONGODB_ATLAS_CONNECT_STRING>"
 
 npm run now
+```
 
 ### Subsequent deployments:
-
+```
 npm run now
-
 ```
 ## Dependences:
 - [Node.js](https://nodejs.org/en/)
