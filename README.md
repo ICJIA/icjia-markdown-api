@@ -1,6 +1,8 @@
-# REST API for Markdown Editor Permalinks
+# Markdown editor permalink API
 
 Test REST API using [Loopback.io](https://loopback.io) and [MySQL](https://www.mysql.com/). This is used in conjunction with the [ICJIA Markdown editor](https://github.com/ICJIA/icjia-markdown) as a way to store user-generated permalinks.
+
+The API is hosted on [Now](https://zeit.co/now) and connects to a [DigitalOcean](https://www.digitalocean.com/) droplet running an instance of MySQL.
 
 For local development, make sure [Node](https://nodejs.org/en/) and [MySQL](https://www.mysql.com/) are installed.
 
