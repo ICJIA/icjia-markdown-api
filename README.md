@@ -1,12 +1,12 @@
 # ICJIA REST API
 
-Test REST API using [Loopback.io](https://loopback.io) and [MongoDB Atlas cloud database](https://cloud.mongodb.com/) .
+Test REST API using [Loopback.io](https://loopback.io) and MySQL.
 
-For local development, make sure [Node](https://nodejs.org/en/) and [MongoDB]() are installed.
+For local development, make sure [Node](https://nodejs.org/en/) and MySQL are installed.
 
-## Start local MongoDB
+## Start local MySQL
 ```
-mongod
+sudo /etc/init.d/mysql start
 ```
 
 ## Local deployment:
@@ -19,7 +19,7 @@ npm run dev
 ### First deployment:
 
 ```
-now secrets add mongodb-url "mongodb://<MONGODB_ATLAS_CONNECT_STRING>"
+now secrets add mysql-url "mysql://<USERNAME>:<PASSWORD>@<MYSQL_IP_ADDRESS>/links"
 
 npm run now
 ```

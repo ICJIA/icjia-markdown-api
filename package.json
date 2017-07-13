@@ -8,7 +8,7 @@
       "icjia-api"
     ],
     "env": {
-      "MONGODB_URL": "@mongodb-url",
+      "MYSQL_URL": "@mysql-url",
       "NODE_ENV": "production"
     }
   },
@@ -16,12 +16,12 @@
     "node": ">=4"
   },
   "scripts": {
-    "dev": "MONGODB_URL=mongodb://localhost:27017/links nodemon server/server.js --watch common --watch server",
+    "dev": "MYSQL_URL=mysql://root:root@localhost/links nodemon server/server.js --watch common --watch server",
     "lint": "eslint .",
     "start": "node .",
     "test:start": "mocha test/**/*.test.js",
-    "test": "MONGODB_URL=mongodb://localhost:27017/links npm run test:start",
-    "test:watch": "MONGODB_URL=mongodb://localhost:27017/links npm run test:start -- --watch",
+    "test": "MYSQL_URL=mysql://root:root@localhost/links npm run test:start",
+    "test:watch": "MYSQL_URL=mysql://root:root@localhost/links npm run test:start -- --watch",
     "now:deploy": "now",
     "now:alias": "now alias",
     "now": "npm run now:deploy && npm run now:alias"
