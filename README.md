@@ -56,11 +56,6 @@ npm run test
 npm run test:watch
 ```
 
-## Demo endpoint
-
-[https://icjia-api.now.sh/api/links](https://icjia-api.now.sh/api/links)
-
-
 ## Dependences:
 - [Node.js](https://nodejs.org/en/)
 - [Nodemon](https://github.com/remy/nodemon)
