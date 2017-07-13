@@ -1,6 +1,6 @@
-# ICJIA REST API
+# ICJIA REST API for Markdown Permalinks
 
-Test REST API using [Loopback.io](https://loopback.io) and [MySQL](https://www.mysql.com/).
+Test REST API using [Loopback.io](https://loopback.io) and [MySQL](https://www.mysql.com/). This is used in conjunction with the [ICJIA Markdown editor](https://github.com/ICJIA/icjia-markdown) as a way to store user-generated permalinks.
 
 For local development, make sure [Node](https://nodejs.org/en/) and [MySQL](https://www.mysql.com/) are installed.
 
