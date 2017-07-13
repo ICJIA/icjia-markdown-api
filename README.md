@@ -1,23 +1,37 @@
 # ICJIA REST API
 
-Test REST API using [Loopback.io](https://loopback.io) and MySQL.
+Test REST API using [Loopback.io](https://loopback.io) and [MySQL](https://www.mysql.com/).
 
-For local development, make sure [Node](https://nodejs.org/en/) and MySQL are installed.
+For local development, make sure [Node](https://nodejs.org/en/) and [MySQL](https://www.mysql.com/) are installed.
 
-## Start local MySQL
+## Start MySQL
 ```
 sudo /etc/init.d/mysql start
 ```
+
 
 ## Local deployment:
 ```
 npm run dev
 ```
+Local deployment runs on local MySQL @ ```localhost```.
 
-## Production deployment to Zeit's Now:
+## Production deployment:
 
 ### First deployment:
 
+Create MySQL database ```links```:
+
+```
+sudo mysql
+mysql> CREATE DATABASE links;
+mysql> SHOW STATUS;
+```
+Then:
+```
+Uncomment automigrations in ./boot/automigrate.js
+```
+Finally, deploy to [Now](https://zeit.co/now) static hosting:
 ```
 now secrets add mysql-url "mysql://<USERNAME>:<PASSWORD>@<MYSQL_IP_ADDRESS>/links"
 
@@ -25,6 +39,12 @@ npm run now
 ```
 
 ### Subsequent deployments:
+First:
+```
+Remove or comment out automigrations in ./boot/automigrate.js.
+```
+Then:
+
 ```
 npm run now
 ```
@@ -45,7 +65,6 @@ npm run test:watch
 - [Node.js](https://nodejs.org/en/)
 - [Nodemon](https://github.com/remy/nodemon)
 - [Loopback.io](https://loopback.io)
-- [MongoDB](https://www.mongodb.com/)
-- [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+- [MySQL](https://www.mysql.com/)
 - [Mocha](https://github.com/mochajs/mocha)
 - [Chai](http://chaijs.com/)
