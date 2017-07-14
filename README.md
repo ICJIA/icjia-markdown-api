@@ -27,7 +27,7 @@ Create MySQL database ```links```:
 ```
 sudo mysql
 mysql> CREATE DATABASE links;
-mysql> SHOW STATUS;
+mysql> SHOW DATABASES;
 ```
 Then:
 ```
